@@ -3,6 +3,13 @@ type Params = {
     slug: string;
   };
 };
+export async function generateStaticParams() {
+  return [
+    { slug: 'hello-world' },
+    { slug: 'nextjs-ssg' },
+    { slug: 'devops-roadmap' },
+  ]
+}
 
 export async function generateMetadata({ params }: Params) {
   return { title: `Post: ${params.slug}` };
