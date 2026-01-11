@@ -1,7 +1,8 @@
+
 export const metadata = {
   title: "App Router",
 };
 
 export default function Page() {
-  return <h>App Router HCM</h>; 
+  return <h1>App Router HCM</h1>;
 }
